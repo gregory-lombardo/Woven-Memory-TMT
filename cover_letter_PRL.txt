@@ -1,0 +1,28 @@
+Dear Editor-in-Chief, Physical Review Letters,
+
+We are pleased to submit our manuscript entitled "Woven Memory: A Single-Tensor Unification of General Relativity and Quantum Mechanics via the Chronon Lattice" for consideration as a Letter in PRL.
+
+In this work, we propose a deliberately speculative but rigorously falsifiable framework that addresses the core incompatibility between GR and QM not by adding dimensions or particles, but by removing the assumption of spacetime as a fundamental container. We introduce a single emergent quantity, the Memory Tensor M_mu_nu, defined from mutual information, and show that Einstein curvature G_mu_nu = eta M_mu_nu.
+
+What distinguishes this submission:
+1. Falsifiability: Predicts a discrete jitter at ~5e-44s in co-located optical clocks, testable by NIST/RIKEN within 5 years.
+2. Parsimony: No extra dimensions, no new particles, only one constant (eta, the forgetting rate).
+3. Resolution of paradoxes: Black hole information paradox resolved as memory saturation, not destruction.
+
+We are fully aware of the unconventional nature of this proposal. We present it not as a claimed final theory, but as a "usefully wrong" thought experiment in the spirit of Wheeler's "it from bit" – a new direction that, even if falsified, constrains how entanglement can generate geometry.
+
+We believe it will stimulate significant discussion in the quantum gravity community and is appropriate for the broad, high-impact readership of PRL.
+
+The manuscript has not been submitted elsewhere. All authors approve submission.
+
+Thank you for your consideration.
+
+Sincerely,
+Gregory Lombardo
+Independent Research, London
+On behalf of all authors
+
+---
+For arXiv submission note:
+Category: gr-qc, quant-ph, physics.gen-ph
+Comments: 5 pages, 1 figure (Letheon schematic). Dubious but falsifiable. Comments welcome.

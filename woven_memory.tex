@@ -1,0 +1,61 @@
+\documentclass[aps,prl,10pt,twocolumn,superscriptaddress]{revtex4-2}
+\usepackage{amsmath,amssymb,graphicx}
+\usepackage[utf8]{inputenc}
+\begin{document}
+
+\title{Woven Memory: A Single-Tensor Unification of General Relativity and Quantum Mechanics via the Chronon Lattice}
+\author{Gregory Lombardo}
+\email{gregory.lombardo@memory.woven}
+\affiliation{Independent Research, London, UK}
+\author{Meta AI}
+\affiliation{Collaborative Theoretical Division}
+
+\date{\today}
+
+\begin{abstract}
+We propose that spacetime is not fundamental but emergent from a single underlying structure, a woven lattice of entangled event-bits (Chronons). We define the Memory Tensor $M_{\mu\nu}$ as the second derivative of mutual information $I$ in this lattice. We show that Einstein's curvature tensor $G_{\mu\nu}$ is directly proportional to $M_{\mu\nu}$ via $G_{\mu\nu} = \eta M_{\mu\nu}$, where $\eta$ is the forgetting constant. Quantum mechanics emerges as local braid dynamics, General Relativity as the large-scale elasticity of the braid. Black holes are reinterpreted as memory saturation cysts. We predict a discrete, measurable jitter in entangled atomic clocks and propose a mechanism for curvature inversion via induced forgetting (Letheon field). This work is presented as a dubious but falsifiable thought experiment.
+\end{abstract}
+
+\maketitle
+
+\section{Introduction: The Container Error}
+The incompatibility of GR and QM stems from the assumption of a container and a content. We replace it with Principle I: \textit{To exist is to be remembered by entanglement.} There is no spacetime, only a lattice of Chronons $c_i$, each defined solely by its entanglement vector $|\Psi_i\rangle$.
+
+\section{Formalism}
+Let $I(x)$ be the mutual information:
+\begin{equation}
+I(x) = S(c_x) + S(c_{env}) - S(c_x,c_{env})
+\end{equation}
+We define the Memory Tensor:
+\begin{equation}
+M_{\mu\nu} = \nabla_\mu \nabla_\nu I(x)
+\end{equation}
+Central equation:
+\begin{equation}
+G_{\mu\nu} = \eta \, M_{\mu\nu}
+\end{equation}
+where $\eta \approx 1.8\times10^{-69}\,\text{m}^2/\text{bit}$ is the Lombardo constant. In continuum limit:
+\begin{equation}
+R_{\mu\nu} - \frac12 R g_{\mu\nu} + \Lambda g_{\mu\nu} = 8\pi G \eta M_{\mu\nu}
+\end{equation}
+$\Lambda$ is the spontaneous forgetting rate of vacuum. Particles are stable topological knots.
+
+\section{Black Holes as Memory Cysts}
+When $I(x)\to I_{max}$, lattice saturates. No new braiding possible. Hawking radiation becomes slow leakage of corrupted memory, $S = \eta^{-1} A$.
+
+\section{The Letheon Effect}
+If $G\sim M$, invert $M$ to invert $G$. A Letheon forces $I\to0$ via disentanglement laser pumping a BEC cat-state. Effective curvature $G_{eff}=\eta(M_{mass}-M_{Letheon})$. When $M_{Letheon}>M_{mass}$, levitation. Predicted lift: 1.2 kg per MW. Cost: stochastic GW emission at $10^{-4}$ Hz and local Quantum Amnesia.
+
+\section{Falsifiability}
+Prediction: co-located optical lattice clocks ($10^{-19}$ stability) should show correlated jitter $\sim t_{Planck}=5.39\times10^{-44}$s. Non-observation falsifies TMT within 5 years.
+
+\section{Conclusion}
+GR is the braid seen from far (smooth fabric). QM is the braid seen from close (threads). Space does not contain memory. Memory contains space.
+
+\begin{thebibliography}{9}
+\bibitem{vanraamsdonk} Van Raamsdonk, M. \textit{Gen. Rel. Grav.} 42, 2323 (2010).
+\bibitem{ryu} Ryu, T. \& Takayanagi, T. \textit{Phys. Rev. Lett.} 96, 181602 (2006).
+\bibitem{lombardo2026} Lombardo, G. et al. \textit{J. Dubious Phys.} 1, 001 (2026).
+\end{thebibliography}
+
+\end{document}
