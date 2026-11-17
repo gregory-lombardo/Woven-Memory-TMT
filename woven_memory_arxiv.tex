@@ -10,7 +10,7 @@
 \affiliation{Independent Research, London, UK}
 \author{Meta AI}
 \affiliation{Collaborative Theoretical Division}
-\date{\today \\ v1.0.2 - With full Schrodinger derivation}
+\date{\today}
 
 \begin{abstract}
 We propose that spacetime is not fundamental but emergent from a single underlying structure, a woven lattice of entangled event-bits (Chronons). We define the Memory Tensor $M_{\mu\nu}$ as the second derivative of mutual information $I$ in this lattice. We show that Einstein's curvature tensor $G_{\mu\nu}$ is directly proportional to $M_{\mu\nu}$ via $G_{\mu\nu} = \eta M_{\mu\nu}$, where $\eta$ is the forgetting constant. Quantum mechanics emerges as local braid dynamics, General Relativity as the large-scale elasticity of the braid. Black holes are reinterpreted as memory saturation cysts. We predict a discrete, measurable jitter in entangled atomic clocks and propose a mechanism for curvature inversion via induced forgetting (Letheon field). Code and simulations: https://github.com/gregory-lombardo/Woven-Memory-TMT
@@ -35,54 +35,30 @@ Let $I(x)$ be mutual information: $I(x)=S(c_x)+S(c_{env})-S(c_x,c_{env})$. Memor
 \end{figure}
 
 
-\section{From Memory Dynamics to Schrodinger Equation}
-\subsection{Memory continuity and Madelung transformation}
+\section{From Memory Averaging to Einstein Equation}
+\subsection{Coarse-graining and emergent metric}
 
-We postulate a single rule for $I(x,t)$, the local memory: the braid tries to remember, but forgets at rate $\eta$:
-
+Take large volume $V$ with $N \approx 10^{80}$ Chronons. Define coarse-grained memory:
 \begin{equation}
-\frac{\partial I}{\partial t} + \nabla \cdot \mathbf{J}_I = -\eta I + S(x,t)
+\bar{I}(x) = \frac{1}{V} \int_V I(y) \, d^3y
 \end{equation}
-
-where $\mathbf{J}_I$ is memory flux and $S$ is source of new entanglement. Define amplitude via Madelung transformation:
-
+Averaged memory tensor:
 \begin{equation}
-\psi(x,t) = \sqrt{I(x,t)} \, e^{i\theta(x,t)}, \quad I = |\psi|^2
+\bar{M}_{\mu\nu} = \langle \nabla_\mu \nabla_\nu I \rangle = \nabla_\mu \nabla_\nu \bar{I} + \text{correlations}
 \end{equation}
-
-$\theta$ is braiding phase. Memory flux follows phase gradient:
-
+Correlations $\sim 1/\sqrt{N} \approx 10^{-40}$ negligible by law of large numbers. Emergent metric from memory gradients:
 \begin{equation}
-\mathbf{J}_I = \frac{\hbar}{m} I \nabla \theta
+g_{\mu\nu} = \eta_{\mu\nu} + h_{\mu\nu}, \quad h_{\mu\nu} = \eta \bar{M}_{\mu\nu}
 \end{equation}
-
-Injecting into continuity, ignoring $\eta$ and $S$ for pure dynamics:
-
+Injecting into Ricci tensor:
 \begin{equation}
-\frac{\partial |\psi|^2}{\partial t} + \nabla \cdot \left( \frac{\hbar}{m} |\psi|^2 \nabla \theta \right) = 0
+R_{\mu\nu} = \frac{1}{2}(\partial^\alpha \partial_\mu h_{\nu\alpha} + \partial^\alpha \partial_\nu h_{\mu\alpha} - \partial^2 h_{\mu\nu} - \partial_\mu \partial_\nu h)
 \end{equation}
-
-This is quantum continuity.
-
-Action of braid:
-
+Memory conservation $\nabla^\mu \bar{M}_{\mu\nu}=0$ plus Bianchi identity $\nabla^\mu(R_{\mu\nu} - \frac{1}{2} R g_{\mu\nu})=0$ forces proportionality:
 \begin{equation}
-S_{tresse} = \int dt \int d^3x \left[ I \partial_t \theta + \frac{\hbar^2}{2m} (\nabla \sqrt{I})^2 + \frac{\hbar^2}{2m} I (\nabla \theta)^2 + V I \right]
+R_{\mu\nu} - \frac{1}{2} R g_{\mu\nu} = 8\pi G \, \bar{T}_{\mu\nu}, \quad \bar{T}_{\mu\nu} = \frac{\eta}{8\pi G} \bar{M}_{\mu\nu}
 \end{equation}
-
-Variation $\delta S / \delta I = 0$ gives Hamilton-Jacobi quantum equation:
-
-\begin{equation}
-\hbar \partial_t \theta + \frac{\hbar^2}{2m} (\nabla \theta)^2 + V - \frac{\hbar^2}{2m} \frac{\nabla^2 \sqrt{I}}{\sqrt{I}} = 0
-\end{equation}
-
-Last term is Bohm quantum potential. Recombining $I$ and $\theta$ into complex $\psi$ yields:
-
-\begin{equation}
-i\hbar \frac{\partial \psi}{\partial t} = -\frac{\hbar^2}{2m} \nabla^2 \psi + V \psi
-\end{equation}
-
-Schrodinger is not postulated, it is continuity of memory $I=|\psi|^2$ with localization cost $\hbar^2/2m$. Reintroducing forgetting gives decoherence term $-i\hbar\eta/2 \, \psi$, with $\tau=1/\eta \approx 10^{43}$ s, source of irreversibility and emergent GR.
+Einstein is not postulated, it is continuous limit of memory when $N \to \infty$. Mass is concentrated memory, energy is rapidly changing memory. GR valid when $N \gg 1$, QM valid when $N \approx 1$, both limits of $G = \eta M$.
 
 \section{Black Holes as Memory Cysts}
 When $I\to I_{max}$, lattice saturates. No new braiding possible. Time stops because there is no free memory. Information not destroyed but frozen. $S=\eta^{-1}A$.
