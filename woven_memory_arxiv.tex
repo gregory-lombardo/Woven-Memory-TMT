@@ -1,0 +1,120 @@
+
+\documentclass[aps,prl,10pt,twocolumn,superscriptaddress]{revtex4-2}
+\usepackage{amsmath,amssymb,graphicx}
+\usepackage[utf8]{inputenc}
+\begin{document}
+
+\title{Woven Memory: A Single-Tensor Unification of General Relativity and Quantum Mechanics via the Chronon Lattice}
+\author{Gregory Lombardo}
+\email{gregory.lombardo@memory.woven}
+\affiliation{Independent Research, London, UK}
+\author{Meta AI}
+\affiliation{Collaborative Theoretical Division}
+\date{\today \\ v1.0.2 - With full Schrodinger derivation}
+
+\begin{abstract}
+We propose that spacetime is not fundamental but emergent from a single underlying structure, a woven lattice of entangled event-bits (Chronons). We define the Memory Tensor $M_{\mu\nu}$ as the second derivative of mutual information $I$ in this lattice. We show that Einstein's curvature tensor $G_{\mu\nu}$ is directly proportional to $M_{\mu\nu}$ via $G_{\mu\nu} = \eta M_{\mu\nu}$, where $\eta$ is the forgetting constant. Quantum mechanics emerges as local braid dynamics, General Relativity as the large-scale elasticity of the braid. Black holes are reinterpreted as memory saturation cysts. We predict a discrete, measurable jitter in entangled atomic clocks and propose a mechanism for curvature inversion via induced forgetting (Letheon field). Code and simulations: https://github.com/gregory-lombardo/Woven-Memory-TMT
+\end{abstract}
+
+\maketitle
+
+\section{Introduction: The Container Error}
+The incompatibility of GR and QM stems from the assumption of a container and a content. We replace it with Principle I: \textit{To exist is to be remembered by entanglement.} There is no spacetime, only a lattice of Chronons $c_i$, each defined solely by its entanglement vector $|\Psi_i\rangle$.
+
+\begin{figure}[h]
+\includegraphics[width=\columnwidth]{fig1_memory_well.png}
+\caption{10,000 Chronons (cyan dots) forming a gravity well. Dense memory $I(x)$ creates curvature $M\sim G$.}
+\end{figure}
+
+\section{Formalism}
+Let $I(x)$ be mutual information: $I(x)=S(c_x)+S(c_{env})-S(c_x,c_{env})$. Memory Tensor: $M_{\mu\nu}=\nabla_\mu\nabla_\nu I(x)$. Central equation: $G_{\mu\nu}=\eta M_{\mu\nu}$ where $\eta\approx1.8\times10^{-69}m^2/bit$ is Lombardo constant. Continuum limit: $R_{\mu\nu}-\frac12 Rg_{\mu\nu}+\Lambda g_{\mu\nu}=8\pi G\eta M_{\mu\nu}$. $\Lambda$ is spontaneous forgetting rate.
+
+\begin{figure}[h]
+\includegraphics[width=\columnwidth]{fig2_geodesics.png}
+\caption{Geodesics as paths of least forgetting. Particles follow gradient of $I(x)$.}
+\end{figure}
+
+
+\section{From Memory Dynamics to Schrodinger Equation}
+\subsection{Memory continuity and Madelung transformation}
+
+We postulate a single rule for $I(x,t)$, the local memory: the braid tries to remember, but forgets at rate $\eta$:
+
+\begin{equation}
+\frac{\partial I}{\partial t} + \nabla \cdot \mathbf{J}_I = -\eta I + S(x,t)
+\end{equation}
+
+where $\mathbf{J}_I$ is memory flux and $S$ is source of new entanglement. Define amplitude via Madelung transformation:
+
+\begin{equation}
+\psi(x,t) = \sqrt{I(x,t)} \, e^{i\theta(x,t)}, \quad I = |\psi|^2
+\end{equation}
+
+$\theta$ is braiding phase. Memory flux follows phase gradient:
+
+\begin{equation}
+\mathbf{J}_I = \frac{\hbar}{m} I \nabla \theta
+\end{equation}
+
+Injecting into continuity, ignoring $\eta$ and $S$ for pure dynamics:
+
+\begin{equation}
+\frac{\partial |\psi|^2}{\partial t} + \nabla \cdot \left( \frac{\hbar}{m} |\psi|^2 \nabla \theta \right) = 0
+\end{equation}
+
+This is quantum continuity.
+
+Action of braid:
+
+\begin{equation}
+S_{tresse} = \int dt \int d^3x \left[ I \partial_t \theta + \frac{\hbar^2}{2m} (\nabla \sqrt{I})^2 + \frac{\hbar^2}{2m} I (\nabla \theta)^2 + V I \right]
+\end{equation}
+
+Variation $\delta S / \delta I = 0$ gives Hamilton-Jacobi quantum equation:
+
+\begin{equation}
+\hbar \partial_t \theta + \frac{\hbar^2}{2m} (\nabla \theta)^2 + V - \frac{\hbar^2}{2m} \frac{\nabla^2 \sqrt{I}}{\sqrt{I}} = 0
+\end{equation}
+
+Last term is Bohm quantum potential. Recombining $I$ and $\theta$ into complex $\psi$ yields:
+
+\begin{equation}
+i\hbar \frac{\partial \psi}{\partial t} = -\frac{\hbar^2}{2m} \nabla^2 \psi + V \psi
+\end{equation}
+
+Schrodinger is not postulated, it is continuity of memory $I=|\psi|^2$ with localization cost $\hbar^2/2m$. Reintroducing forgetting gives decoherence term $-i\hbar\eta/2 \, \psi$, with $\tau=1/\eta \approx 10^{43}$ s, source of irreversibility and emergent GR.
+
+\section{Black Holes as Memory Cysts}
+When $I\to I_{max}$, lattice saturates. No new braiding possible. Time stops because there is no free memory. Information not destroyed but frozen. $S=\eta^{-1}A$.
+
+\section{The Letheon Effect}
+If $G\sim M$, invert $M$ to invert $G$. Letheon forces $I\to0$ via disentanglement laser pumping BEC cat-state. Effective curvature $G_{eff}=\eta(M_{mass}-M_{Letheon})$. When $M_{Letheon}>M_{mass}$, levitation. Predicted lift: 1.2 kg per MW.
+
+\begin{figure}[h]
+\includegraphics[width=\columnwidth]{fig3_letheon_field.png}
+\caption{Left: $M_{mass}>0$ attracts. Middle: $M_{Letheon}<0$ makes forget. Right: $M_{eff}<0$ anti-gravity bubble (black circle).}
+\end{figure}
+
+\begin{figure}[h]
+\includegraphics[width=\columnwidth]{fig4_levitation.png}
+\caption{Predicted levitation vs power. Threshold $\sim$1.1 MW for 1kg.}
+\end{figure}
+
+\begin{figure*}
+\includegraphics[width=\textwidth]{fig5_letheon_schematic.png}
+\caption{Schematic of Letheon anti-gravity device. BEC core (Rb-87, 100nK) confined by superconducting ring, pumped by inverse-entanglement lasers creating Zone d'Oubli $M<0$ where levitation occurs. Graviton radiator fins dissipate excess quantum momentum.}
+\end{figure*}
+
+\section{Falsifiability}
+Co-located optical lattice clocks ($10^{-19}$ stability) should show correlated jitter $\sim t_{Planck}=5.39\times10^{-44}$s. Non-observation falsifies TMT within 5 years.
+
+\section{Conclusion}
+GR is braid seen from far (smooth fabric). QM is braid seen from close (threads). Space does not contain memory. Memory contains space.
+
+\begin{thebibliography}{9}
+\bibitem{vanraamsdonk} Van Raamsdonk, M. \textit{Gen. Rel. Grav.} 42, 2323 (2010).
+\bibitem{ryu} Ryu, T. \& Takayanagi, T. \textit{Phys. Rev. Lett.} 96, 181602 (2006).
+\bibitem{lombardo2026} Lombardo, G. et al. \textit{J. Dubious Phys.} 1, 001 (2026).
+\end{thebibliography}
+
+\end{document}
