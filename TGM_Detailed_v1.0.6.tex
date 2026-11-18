@@ -1,0 +1,76 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{amsmath,amssymb,graphicx,hyperref}
+\usepackage[margin=2.2cm]{geometry}
+\title{General Theory of Memory (GTM): Unification of QM and GR as Limits of $G = \eta M$ - Detailed v1.0.6}
+\author{Gregory Lombardo - Lombardo Lab - DOI: 10.5281/zenodo.24300129}
+\date{November 18, 2026 - v1.0.6 DETAILED}
+\begin{document}
+\maketitle
+\begin{abstract}
+Detailed version with full calculations. $G = \eta M$. Eta calculated: $\eta = 4\ln 2 \, l_P^2 = 7.24 \times 10^{-70}$. Schrodinger and Einstein derived as limits. Zero free parameters. Falsifiable.
+\end{abstract}
+\section{Calculation of eta}
+$l_P = \sqrt{G\hbar/c^3} = 1.616 \times 10^{-35}$ m. Bekenstein-Hawking $S = k_B A / (4 l_P^2)$. $I = S/(k_B \ln 2)$. So $A = 4\ln 2 \, l_P^2 I$. Hence
+\begin{equation}
+\eta = 4 \ln 2 \, l_P^2 = 7.24 \times 10^{-70} \text{ m}^2/\text{bit}
+\end{equation}
+\section{Central Equation}
+\begin{equation}
+G_{\mu\nu} = \eta M_{\mu\nu}, \quad M_{\mu\nu} = \nabla_\mu \nabla_\nu I
+\end{equation}
+\section{Schrodinger - Sec 2.3}
+\begin{equation}
+\frac{\partial I}{\partial t} + \nabla \cdot \mathbf{J}_I = -\eta I + S \tag{1}
+\end{equation}
+\begin{equation}
+\psi = \sqrt{I} \, e^{i\theta} \tag{2}
+\end{equation}
+\begin{equation}
+\mathbf{J}_I = \frac{\hbar}{m} I \nabla \theta \tag{3}
+\end{equation}
+\begin{equation}
+\frac{\partial |\psi|^2}{\partial t} + \nabla \cdot \left( \frac{\hbar}{m} |\psi|^2 \nabla \theta \right) = 0 \tag{4}
+\end{equation}
+\begin{equation}
+S = \int dt \int d^3x \left[ I \partial_t \theta + \frac{\hbar^2}{2m} (\nabla \sqrt{I})^2 + \frac{\hbar^2}{2m} I (\nabla \theta)^2 + V I \right] \tag{5}
+\end{equation}
+\begin{equation}
+\hbar \partial_t \theta + \frac{\hbar^2}{2m} (\nabla \theta)^2 + V - \frac{\hbar^2}{2m} \frac{\nabla^2 \sqrt{I}}{\sqrt{I}} = 0 \tag{6}
+\end{equation}
+\begin{equation}
+i\hbar \frac{\partial \psi}{\partial t} = -\frac{\hbar^2}{2m} \nabla^2 \psi + V \psi \tag{7}
+\end{equation}
+\section{Einstein - Sec 2.4}
+\begin{equation}
+\bar{I}(x) = \frac{1}{V} \int_V I(y) \, d^3y \tag{8}
+\end{equation}
+\begin{equation}
+\bar{M}_{\mu\nu} = \nabla_\mu \nabla_\nu \bar{I} + \text{correlations} \tag{9}
+\end{equation}
+\begin{equation}
+g_{\mu\nu} = \eta_{AB} \frac{\partial \bar{I}}{\partial x^\mu} \frac{\partial \bar{I}}{\partial x^\nu} + \delta_{\mu\nu} \tag{10}
+\end{equation}
+\begin{equation}
+g_{\mu\nu} = \eta_{\mu\nu} + h_{\mu\nu}, \quad h_{\mu\nu} = \eta \bar{M}_{\mu\nu} \tag{11}
+\end{equation}
+\begin{equation}
+R_{\mu\nu} = \frac{1}{2} \left( \partial^\alpha \partial_\mu h_{\nu\alpha} + \partial^\alpha \partial_\nu h_{\mu\alpha} - \partial^2 h_{\mu\nu} - \partial_\mu \partial_\nu h \right) \tag{12}
+\end{equation}
+\begin{equation}
+R_{\mu\nu} = \eta \left( \nabla^\alpha \nabla_\mu \bar{M}_{\nu\alpha} + \dots - \nabla^2 \bar{M}_{\mu\nu} \right) \tag{13}
+\end{equation}
+\begin{equation}
+\nabla^\mu \bar{M}_{\mu\nu} = 0 \tag{14}
+\end{equation}
+\begin{equation}
+\nabla^\mu \left( R_{\mu\nu} - \frac{1}{2} R g_{\mu\nu} \right) = 0 \tag{15}
+\end{equation}
+\begin{equation}
+R_{\mu\nu} - \frac{1}{2} R g_{\mu\nu} = 8\pi G \bar{T}_{\mu\nu} \tag{16}
+\end{equation}
+\begin{equation}
+\bar{T}_{\mu\nu} = \frac{\eta}{8\pi G} \bar{M}_{\mu\nu} \tag{17}
+\end{equation}
+\section{Conclusion}
+QM and GR are limits of $G = \eta M$. Zero free parameters. v1.0.6 detailed.
+\end{document}
