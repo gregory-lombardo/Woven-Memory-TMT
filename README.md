@@ -1,4 +1,9 @@
+![TGM v1.0.7 UNIFICATION COMPLETE](cover_TGM_v1.0.7.jpg)
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24300129.svg)](https://doi.org/10.5281/zenodo.24300129)
+
+## TGM - Théorie Générale de la Mémoire - v1.0.7
+### Unification de GR & QM - G = η M - η = 7.24e-70 calculé
 <img width="2048" height="1152" alt="image" src="https://github.com/user-attachments/assets/588b1300-c1cd-419d-b79c-7e31adba8b6d" />
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24300129.svg)](https://doi.org/10.5281/zenodo.24300129)
