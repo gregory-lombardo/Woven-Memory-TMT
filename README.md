@@ -1,3 +1,6 @@
+
+<img width="2048" height="1152" alt="image" src="https://github.com/user-attachments/assets/588b1300-c1cd-419d-b79c-7e31adba8b6d" />
+
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24300129.svg)](https://doi.org/10.5281/zenodo.24300129)
 
 # Woven Memory - TMT
